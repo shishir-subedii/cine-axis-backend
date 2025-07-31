@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: pql-ticket-zone-container
+    restart: always
+    environment:
+      POSTGRES_DB: pql-ticket-zone-db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    ports:
+      - '5432:5432'
+    volumes:
+      - pg-ticket-zone-v:/var/lib/postgresql/data
+
+volumes:
+  pg-ticket-zone-v: 
