@@ -1,16 +1,1 @@
-This is a template to make backend servers. 
-It includes dockercompose(for postgresql), Typeorm and other necessary configurations like jwt, .env, bcrypt etc.
-It includes routes like signup, login, logout, etc..
-It is ready to use.
-
-how to use: 
-- clone this repo : git clone https://github.com/shishir-subedii/backend-template.git
-
-- install the necessary modules: npm install 
-
-- run postgresql container : 
-    - docker compose -d up (or you can use any postgresql environment)
-
-- run the project(development): npm run start:dev
-
-later use your own github repo and it's configurations. 
+CineAxis is a modern platform where cinemas and movie lovers come together. For cinemas, it’s a tool to manage everything—halls, shows, seat layouts, and ticket prices—without needing complicated software. For users, it’s a simple way to browse movies, pick a showtime, choose seats, and pay securely using options like Stripe or eSewa. After booking, they instantly get a digital ticket and email confirmation. Whether it’s one small local hall or a chain of theaters, CineAxis works for all, making the whole ticketing experience fast, organized, and stress-free.
