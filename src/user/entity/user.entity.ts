@@ -15,7 +15,7 @@ export class User {
     @Column({ select: false }) //we use select: false to avoid returning password in queries
     password: string;
 
-    @Column('text', { array: true, nullable: true, default: () => 'ARRAY[]::TEXT[]' })
+    @Column('text', { array: true, nullable: true, select: false, default: () => 'ARRAY[]::TEXT[]' })
     accessTokens: string[];
 
 
