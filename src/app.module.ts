@@ -8,6 +8,8 @@ import { JwtmoduleModule } from './common/jwtmodule/jwtmodule.module';
 import { ThrottlerGuard, ThrottlerModule } from '@nestjs/throttler';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { APP_GUARD } from '@nestjs/core';
+import { MerchantModule } from './merchant/merchant.module';
+import { AdminModule } from './admin/admin.module';
 
 @Module({
   imports: [
@@ -24,7 +26,7 @@ import { APP_GUARD } from '@nestjs/core';
         ],
       }),
     }),
-    DatabaseModule, UsersModule, AuthModule, AppConfigModule, JwtmoduleModule
+    DatabaseModule, UsersModule, AuthModule, AppConfigModule, JwtmoduleModule, MerchantModule, AdminModule
   ],
   providers: [
     {
